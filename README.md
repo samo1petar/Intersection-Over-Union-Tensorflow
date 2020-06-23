@@ -19,7 +19,7 @@ iou_tf()
  - output: iou values -> [batch, height, width, anchor, iou]
 
 Algorithm speed depends upon anchor number and feature map size.
-Next graph shows algorithm speed on Nvidia GTX 1070. 
+Next graph shows algorithm speed on nvidia GTX 1070. 
 In most detection cases anchor number is usually lower than 20, which means this algorithm is fast for all
 but for big feature maps (100x100) with a lot of different anchors. But even than, it works great for up to ~25 anchors.
 
