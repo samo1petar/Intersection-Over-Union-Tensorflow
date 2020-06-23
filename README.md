@@ -8,7 +8,7 @@ bounding box intersection area divided with union area of both bounding boxes.
 
 Main contribution of this repository is it's usability for neural networks out of the box.
 The function _iou_tf()_ located inside _intersection_over_union/iou.py_ calculates
-intersetctions. _iou_tf()_ takes proposals and anchors, and outputs iou values.
+intersections of every proposal with every anchor. _iou_tf()_ takes proposals and anchors, and outputs iou values.
 It's made so it takes feature map directly from some neural network layer (e.g. conv) in 
 format [batch, height, width, anchor, points], and outputs values in format [batch, height, width, anchor, iou].
 In this way it's values are easily interpretable.
